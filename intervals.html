@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Earwort · Intervals and scales</title>
-<meta name="description" content="Free ear training for musicians: scale degrees, intervals, scales and modes, chords, melodic dictation. It runs in your browser, with no sign-up and no ads.">
+<meta name="description" content="Hear intervals, degrees and chords: free ear training for musicians. It also covers scales, modes and melodic dictation. It runs in your browser, with no sign-up and no ads.">
 <meta name="color-scheme" content="dark light">
 <style>
 /* ===================================================================================================== shared ===
@@ -296,12 +296,12 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
 </style>
 </head>
 <body>
-<div id="jsWarn">The buttons don't work in a file preview.<br>Tap Share → <b>Open in Safari</b> (or Chrome) to start the trainer.</div>
+<div id="jsWarn">The buttons don’t work in a file preview.<br>Tap Share → <b>Open in Safari</b> (or Chrome) to start the trainer.</div>
 <div class="wrap">
   <header>
     <div class="ttl">
       <h1><span class="a">Ear</span><span class="b">wort</span></h1>
-      <p>Train your ear for intervals, degrees and scales · free</p>
+      <p>Hear intervals, degrees and chords · free ear training</p>
     </div>
     <div class="hbtns">
       <button class="btn support" id="supportBtn" aria-haspopup="dialog"><span data-pi="heart"></span>Support</button>
@@ -387,7 +387,7 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
         <div id="knOct"></div>
         <div id="knVol"></div>
       </div>
-      <div class="hint2">The defaults work well, so you can leave these alone. Drag a knob up or down, or turn it with the mouse wheel or the arrow keys. <b>Note names</b> changes every label at once: notes, scales and chords. <b>Resolve to the tonic</b> is the main trick here. After a correct answer, the note walks step by step to the tonic. Your ear learns the pull of each degree, not just its distance.</div>
+      <div class="hint2">The defaults work well, so you can leave these alone. Drag a knob up or down. On a computer you can also use the mouse wheel, or click the knob and press the arrow keys. <b>“Note names”</b> changes every label at once: notes, scales and chords. <b>“Resolve to the tonic”</b> matters most. In “Degrees”, after a correct answer, the note walks step by step to the tonic. Your ear learns the pull of each degree, not just its distance from the tonic.</div>
     </div>
   </section>
 
@@ -397,9 +397,9 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
       <span class="csum" id="mapSum">empty so far</span><span data-pi="chev" class="chev"></span>
     </button>
     <div class="cbody" id="mapBody">
-      <div class="hint2" style="margin:0 0 12px">Your accuracy on each item of this exercise. The trainer brings back the items you miss most often: that works better than an even shuffle.</div>
+      <div class="hint2" style="margin:0 0 12px">This shows how often you answer each item correctly. Items you often get wrong come up more often. The map clears when you reload or close the page.</div>
       <div class="maprows" id="mapRows"></div>
-      <button class="btn btn-ghost" id="mapReset" style="margin-top:14px">Reset this exercise</button>
+      <button class="btn btn-ghost" id="mapReset" style="margin-top:14px">Clear this exercise’s scores</button>
     </div>
   </section>
 
@@ -409,16 +409,16 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
       <span class="csum">P4: “Here Comes the Bride”</span><span data-pi="chev" class="chev"></span>
     </button>
     <div class="cbody" id="refBody">
-      <div class="hint2" style="margin:0 0 12px">Click a card to hear the interval, ascending. A song helps at first, but treat it as a crutch: once you know the interval, drop the song.</div>
+      <div class="hint2" style="margin:0 0 12px">Choose a card to hear the interval, ascending. A song helps at first. Stop using the song once you know the sound.</div>
       <div class="refgrid" id="refGrid"></div>
       <details>
-        <summary>How to practise so it works on real music</summary>
+        <summary>How to practise for real music</summary>
         <div class="hint2">
-          <b>1. Degrees matter more than intervals.</b> An interval alone is two notes with no key. In real music, every note has a job in its key. The same minor 3rd sounds different as 1→♭3 and as 6→1. That is why Degrees is the main exercise here: a cadence sets the key, then you name the degree of one note.<br><br>
-          <b>2. Sing.</b> Sing what you hear out loud, even if you only hum. Singing a note fixes it in your ear much faster. You need no microphone: sing after you answer, along with the resolution.<br><br>
-          <b>3. Ten minutes a day beats an hour a week.</b> Hearing is memory, and memory loves short, frequent practice.<br><br>
-          <b>4. Move on when an item is steady.</b> Check the Ear map. Aim for 90–95% on every item, not just on average.<br><br>
-          <b>5. Work out music by ear.</b> The trainer is a warm-up, not real practice. Transcribe the bass line of a favourite track: nothing trains your ear better.
+          <b>1. Degrees matter more than intervals.</b> An interval alone is two notes with no key. In real music, every note has a role in its key. The same minor 3rd sounds different as 1→♭3 and as 6→1. That is why Degrees is the main exercise here: a cadence sets the key, then you name the degree of one note.<br><br>
+          <b>2. Sing.</b> Hum or sing what you hear: your voice helps you remember a note faster. You don’t need a microphone: sing along as the note walks to the tonic.<br><br>
+          <b>3. Ten minutes a day is better than an hour a week.</b> Hearing is memory, and memory works best with short, frequent practice.<br><br>
+          <b>4. Move on when you get an item right almost every time.</b> Check the Ear map: aim for 90–95% on every item, not just on average. The map shows the current session only.<br><br>
+          <b>5. Figure out music by ear.</b> The trainer is a warm-up. Real music is the goal. Transcribe the bass line of a favourite track: few exercises train your ear better.
         </div>
       </details>
     </div>
@@ -427,14 +427,14 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
   <section class="supportcard" aria-label="Support Earwort">
     <div>
       <b>Support Earwort</b>
-      <span>Earwort is free, open source and ad-free. Your donation pays for new features and more free tools for musicians.</span>
+      <span>Earwort is free and has no ads. Donations pay for new features.</span>
       <span>Contact: <a href="https://t.me/ficusficusov" target="_blank" rel="noopener">Telegram channel</a> · <a href="mailto:iambemoli@gmail.com">iambemoli@gmail.com</a></span>
     </div>
     <button class="btn support" id="supportBtn2" aria-haspopup="dialog">Support</button>
   </section>
 
   <footer>
-    <kbd>Space</kbd> play · <kbd>K</kbd> the second play button · <kbd>1</kbd>–<kbd>9</kbd> answer · <kbd>A</kbd> <kbd>B</kbd> first or second · <kbd>→</kbd> next · <kbd>Enter</kbd> check · <kbd>⌫</kbd> erase<br>
+    Keyboard: <kbd>Space</kbd> play · <kbd>K</kbd> the second play button (“Note only”, “Slower”…) · <kbd>1</kbd>–<kbd>9</kbd> answer · <kbd>→</kbd> or <kbd>N</kbd> next · <kbd>A</kbd> <kbd>B</kbd> first or second in “Wider?” · <kbd>Enter</kbd> check and <kbd>⌫</kbd> erase in “Dictation”<br>
     Your browser makes the sound. Nothing leaves your device.<br>
     <a href="https://github.com/FicusFicusov/earwort" target="_blank" rel="noopener">Earwort on GitHub</a> · GPL-3.0
   </footer>
@@ -443,9 +443,9 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
 <dialog id="donate" aria-labelledby="donateTitle">
   <form method="dialog"><button class="x" aria-label="Close"><span data-pi="close"></span></button></form>
   <h2 id="donateTitle">Support Earwort</h2>
-  <p>Earwort is free, open source and ad-free. A donation is a gift, not a payment: it pays for new features and more free tools for musicians. Thank you for helping it grow.</p>
+  <p>Earwort is free and open source, with no ads. A donation is a gift: you get nothing extra for it. It funds new features and more free tools for musicians and sound engineers. Thank you.</p>
   <div id="wallets"></div>
-  <p class="note">Send only the coin named, on the network named. Anything else is lost. A crypto transfer is a voluntary gift: it buys nothing.</p>
+  <p class="note">Send only the coin named, on the network named. Anything else is lost.</p>
   <h3>Contact</h3>
   <a class="opt" href="https://t.me/ficusficusov" target="_blank" rel="noopener"><span class="glyph" aria-hidden="true">➤</span><span class="tx"><span class="nm">Telegram channel</span><span class="ad">t.me/ficusficusov</span></span><span class="go">↗</span></a>
   <a class="opt" href="mailto:iambemoli@gmail.com"><span class="glyph" aria-hidden="true">@</span><span class="tx"><span class="nm">Email</span><span class="ad">iambemoli@gmail.com</span></span><span class="go">↗</span></a>
@@ -637,7 +637,10 @@ const Scene = {
     }
     this.lv += (v - this.lv) * (v > this.lv ? .5 : .08);
   },
-  frame(dt) { this.time += dt; this.listen(); this.art.update(dt); this.art.render(); this.ctx.putImageData(this.img, 0, 0); },
+  frame(dt) {
+    if (!this.img) { this.fit(true); if (!this.img) return; }   /* (a page opened in a hidden tab has no size yet) */
+    this.time += dt; this.listen(); this.art.update(dt); this.art.render(); this.ctx.putImageData(this.img, 0, 0);
+  },
   loop(now) {
     requestAnimationFrame((t) => this.loop(t));
     const dt = now - this.last;
@@ -649,14 +652,20 @@ const Scene = {
   still() { if (!this.buf) return; for (let i = 0; i < 60; i++) this.art.update(64); this.art.render(); this.ctx.putImageData(this.img, 0, 0); },
   poke() { if (REDUCED) this.still(); },
   put(x, y, c) { x |= 0; y |= 0; if (x >= 0 && y >= 0 && x < this.W && y < this.H) this.buf[y * this.W + x] = c; },
+  /* pull the pixel's colour toward 0xRRGGBB by t (0..1): fog, glow */
+  tint(x, y, rgb, t) {
+    x |= 0; y |= 0; if (x < 0 || y < 0 || x >= this.W || y >= this.H) return;
+    const i = y * this.W + x, p = this.buf[i], m = (a, b) => Math.round(a + (b - a) * t);
+    this.buf[i] = (0xFF000000 | m(p >> 16 & 255, rgb & 255) << 16 | m(p >> 8 & 255, rgb >> 8 & 255) << 8 | m(p & 255, rgb >> 16 & 255)) >>> 0;
+  },
   /* ordered dithering: is (x, y) inside a fill of density t (0..1)? */
   dith(x, y, t) { return BAYER[(y & 3) * 4 + (x & 3)] < t * 16; },
-  /* a sky in flat bands, top to bottom, with a two-row checker between neighbours (the way pixel art does it) */
+  /* a sky in flat bands, top to bottom, each fading into the next over four dithered rows (the way pixel art does it) */
   sky(stops, until) {
     const W = this.W, n = stops.length, band = until / n;
     for (let y = 0; y < until; y++) {
-      const i = Math.min(n - 1, Math.floor(y / band)), mix = i < n - 1 && (i + 1) * band - y <= 2;
-      for (let x = 0; x < W; x++) this.buf[y * W + x] = mix && ((x + y) & 1) === 0 ? stops[i + 1] : stops[i];
+      const i = Math.min(n - 1, Math.floor(y / band)), left = (i + 1) * band - y, f = i < n - 1 && left <= 4 ? (4.5 - left) / 5 : 0;
+      for (let x = 0; x < W; x++) this.buf[y * W + x] = f && this.dith(x, y, f) ? stops[i + 1] : stops[i];
     }
   },
   line(x0, y0, x1, y1, c) {
@@ -821,21 +830,22 @@ function lcdPlay(on) { on = on || !!AE.drone; document.body.classList.toggle("pl
 const NAMES_DEG = ["1", "♭2", "2", "♭3", "3", "4", "♯4", "5", "♭6", "6", "♭7", "7"];          /* scale degrees (Roman numerals mean chords) */
 const NAMES_SOLF = ["do", "ra", "re", "me", "mi", "fa", "fi", "sol", "le", "la", "te", "ti"];   /* movable do, chromatic */
 
-/* intervals: short name, name, and a song that starts with it ("Think of ..."), ascending unless it says descending */
+/* intervals: short name, name, and songs that start with it: up (ascending) and, where a well-known one exists,
+ * down (descending) */
 const IVL = [
-  { s: 0,  sh: "P1", nm: "Unison",      song: "the same note twice" },
-  { s: 1,  sh: "m2", nm: "Minor 2nd",   song: "the “Jaws” theme" },
-  { s: 2,  sh: "M2", nm: "Major 2nd",   song: "“Happy Birthday”" },
-  { s: 3,  sh: "m3", nm: "Minor 3rd",   song: "“Smoke on the Water”, or “Hey Jude” descending" },
-  { s: 4,  sh: "M3", nm: "Major 3rd",   song: "“When the Saints Go Marching In”, or Beethoven’s Fifth descending" },
-  { s: 5,  sh: "P4", nm: "Perfect 4th", song: "“Here Comes the Bride” or “Amazing Grace”" },
-  { s: 6,  sh: "TT", nm: "Tritone",     song: "“The Simpsons” theme or “Maria” from West Side Story" },
-  { s: 7,  sh: "P5", nm: "Perfect 5th", song: "“Twinkle, Twinkle, Little Star”, or the second leap of the “Star Wars” theme" },
-  { s: 8,  sh: "m6", nm: "Minor 6th",   song: "notes 3 to 4 of “The Entertainer”, or the “Love Story” theme descending" },
-  { s: 9,  sh: "M6", nm: "Major 6th",   song: "“My Bonnie Lies over the Ocean” or the NBC chimes" },
-  { s: 10, sh: "m7", nm: "Minor 7th",   song: "the original “Star Trek” theme" },
-  { s: 11, sh: "M7", nm: "Major 7th",   song: "the leap in the chorus of “Take On Me”" },
-  { s: 12, sh: "P8", nm: "Octave",      song: "“Somewhere Over the Rainbow”" },
+  { s: 0,  sh: "P1", nm: "Unison",      up: "the same note twice", down: "" },
+  { s: 1,  sh: "m2", nm: "Minor 2nd",   up: "the “Jaws” theme", down: "“Für Elise”" },
+  { s: 2,  sh: "M2", nm: "Major 2nd",   up: "“Happy Birthday”", down: "“Mary Had a Little Lamb”" },
+  { s: 3,  sh: "m3", nm: "Minor 3rd",   up: "“Smoke on the Water”", down: "“Hey Jude”" },
+  { s: 4,  sh: "M3", nm: "Major 3rd",   up: "“When the Saints Go Marching In”", down: "Beethoven’s Fifth" },
+  { s: 5,  sh: "P4", nm: "Perfect 4th", up: "“Here Comes the Bride” or “Amazing Grace”", down: "“Eine kleine Nachtmusik”" },
+  { s: 6,  sh: "TT", nm: "Tritone",     up: "“The Simpsons” theme or “Maria” from West Side Story", down: "" },
+  { s: 7,  sh: "P5", nm: "Perfect 5th", up: "“Twinkle, Twinkle, Little Star”", down: "“The Flintstones” theme" },
+  { s: 8,  sh: "m6", nm: "Minor 6th",   up: "notes 3 to 4 of “The Entertainer”", down: "the “Love Story” theme" },
+  { s: 9,  sh: "M6", nm: "Major 6th",   up: "“My Bonnie Lies over the Ocean” or the NBC chimes", down: "“Nobody Knows the Trouble I’ve Seen”" },
+  { s: 10, sh: "m7", nm: "Minor 7th",   up: "the original “Star Trek” theme", down: "" },
+  { s: 11, sh: "M7", nm: "Major 7th",   up: "the leap in the chorus of “Take On Me”", down: "" },
+  { s: 12, sh: "P8", nm: "Octave",      up: "“Somewhere Over the Rainbow”", down: "" },
 ];
 const IVLBY = {}; IVL.forEach((i) => (IVLBY[i.s] = i));
 
@@ -887,122 +897,164 @@ function chSub(c) { return isLat() ? c.nm : c.sub; }
 const IV_LV = [[3, 4, 7, 12], [1, 2, 3, 4, 5, 7, 9, 12], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]];
 const DEG_MAJ = [0, 2, 4, 5, 7, 9, 11], DEG_MIN = [0, 2, 3, 5, 7, 8, 10];
 
-/* ---- the grove: what was played, as bamboo in the mist. Each note is a stalk; each joint of a stalk is one
- * semitone, counted from the ground, so the joints line up across the stalks like a ruler: an interval is the
- * number of joints between two tops. The tonic (or the root) is golden. Notes played one after another stand apart,
- * notes played together stand close. A run of right answers thickens the grove behind; a miss thins it again. ---- */
-const GREEN = [TLP.lime[0], TLP.lime[1], TLP.lime[2], TLP.lime[3]], GOLD = [TLP.fire[0], TLP.copper[1], TLP.copper[2], TLP.copper[3]];
+/* ---- the grove: what was played, as bamboo in the mist. Each note grows as a stalk in front; each joint of a stalk
+ * is one semitone, counted from the ground, so the joints line up across the stalks like a ruler: an interval is the
+ * number of joints between two tops. The tonic, or the root, is golden. Behind it a whole grove fades into the mist.
+ * A run of correct answers brings the dawn: the sky warms with each one, and a miss lets the night come back. ---- */
+const mixc = (a, b, t) => {                                     /* two 0xRRGGBB colours mixed, t 0..1 */
+  const m = (s) => Math.round(((a >> s) & 255) + (((b >> s) & 255) - ((a >> s) & 255)) * t);
+  return (m(16) << 16) | (m(8) << 8) | m(0);
+};
+const GV = {
+  night: [0x0C121B, 0x111A26, 0x172331, 0x1E2C3A, 0x263643, 0x30414C],     /* the sky, top to the mist */
+  dawn:  [0x161A2E, 0x24263F, 0x3A3150, 0x5C4058, 0x8A5658, 0xB97556],
+  mist: [0x5A7472, 0xC09080], ground: 0x0A0F0D, shade: 0x05090A,
+  mid: [0x1B4038, 0x24543F, 0x0F2A26],                                       /* the stalks behind: body, joint, shadow */
+  green: { c: [0xE4EE8E, 0x9FCC48, 0x4F9B34, 0x1E5C2E], node: [0xF2F6B8, 0xD3E373, 0x93BC3E, 0x2B6A32], dark: 0x143D24 },
+  gold:  { c: [0xFFF0A0, 0xF5C33A, 0xC97A2E, 0x7E3F24], node: [0xFFF9D2, 0xFFE17C, 0xE3A848, 0x9A5530], dark: 0x5A2A18 },
+  leaf: [0xB9DC5C, 0x6DBB3A, 0x2F7A33], grass: [0x24503A, 0x1C3A2C],
+};
 const Grove = {
-  W: 0, H: 0, gy: 0, plan: [], stalks: [], far: [], leaves: [], dense: 0, sp: 4, lo: 60,
+  W: 0, H: 0, gy: 0, plan: {}, stalks: [], far: [], mids: [], tufts: [], leaves: [], sp: 4, dawn: 0, dawnT: 0, cheerT: 0,
   layout(W, H) {
-    this.W = W; this.H = H; this.gy = H - 3;
+    this.W = W; this.H = H; this.gy = H - 4;
     const r = seeded(11);
-    this.far = [];
-    for (let i = 0; i < 40; i++) this.far.push({ x: Math.floor(r() * W), top: 10 + r() * (H - 22), h: 0, ph: r() * 6.3, d: r() });
-    this.far.sort((a, b) => a.d - b.d);                          /* the order they appear in as the grove thickens */
+    this.far = [];                                              /* the grove far behind: thin stalks into the sky */
+    for (let x = -2; x < W + 2; x += 6 + Math.floor(r() * 9))
+      this.far.push({ x, w: r() < .6 ? 2 : 1, joint: 8 + Math.floor(r() * 5), off: Math.floor(r() * 9), k: .22 + r() * .14 });
+    this.mids = [];                                             /* nearer, darker stalks behind the mist */
+    for (let i = 0; i < Math.max(4, Math.round(W / 40)); i++)
+      this.mids.push({ x: Math.floor((i + .2 + r() * .6) * W / Math.max(4, Math.round(W / 40))), joint: 9 + Math.floor(r() * 4), off: Math.floor(r() * 9), ph: r() * 6.3, spray: 6 + Math.floor(r() * 22), side: r() < .5 ? -1 : 1 });
+    this.tufts = [];
+    for (let x = 0; x < W; x++) if (r() < .35) this.tufts.push({ x, h: 1 + Math.floor(r() * 3), c: r() < .5 ? 0 : 1 });
     this.place(true);
   },
-  /* groups: [[{m, gold}], ...]; together: the notes of a group sound at once (they stand close) */
+  /* groups: [[{m, gold}], ...]; together: the notes of a group sound at once, so they stand close */
   show(groups, together, cheer) {
     for (const s of this.stalks) s.dying = true;
     this.plan = { groups, together };
     this.place(false);
-    if (cheer) this.cheerT = 900;
+    if (cheer) this.cheerT = 1400;
     Scene.poke();
   },
   place(keep) {
     if (!this.plan.groups) return;
-    const { groups, together } = this.plan, all = groups.flat(), ms = all.map((n) => n.m);
+    const { groups, together } = this.plan, ms = groups.flat().map((n) => n.m);
     const lo = Math.min(...ms), span = Math.max(...ms) - lo;
-    this.sp = Math.max(2, Math.min(6, Math.floor((this.H - 16) / (span + 3))));
-    this.lo = lo;
-    const step = together ? 6 : 10, gap = 16;
+    this.sp = Math.max(3, Math.min(6, Math.floor((this.H - 20) / (span + 3))));
+    const step = together ? 9 : 13, gap = 20;
     const width = groups.reduce((w, g) => w + (g.length - 1) * step, 0) + (groups.length - 1) * gap;
-    let x = Math.max(4, Math.min(this.W - 4 - width, Scene.cx() - Math.round(width / 2)));
+    let x = Math.max(8, Math.min(this.W - 10 - width, Scene.cx() - Math.round(width / 2)));
     const fresh = [];
     groups.forEach((g, gi) => {
       g.forEach((n, i) => {
-        fresh.push({ x, m: n.m, gold: !!n.gold, tgt: (n.m - lo + 3) * this.sp, h: 0, delay: 250 + (together ? 0 : fresh.length * 110), ph: Math.random() * 6.3, flash: 0 });
+        fresh.push({ x, m: n.m, gold: !!n.gold, tgt: (n.m - lo + 3) * this.sp, h: 0, leaf: 0, flash: 0, ph: Math.random() * 6.3,
+                     delay: 250 + (together ? 0 : fresh.length * 120) });
         if (i < g.length - 1) x += step;
       });
       if (gi < groups.length - 1) x += gap;
     });
-    if (keep) {                                                /* a resize: the same stalks at their new places, grown */
-      this.stalks = fresh.map((s) => ({ ...s, h: s.tgt, delay: 0 }));
-    } else this.stalks = this.stalks.filter((s) => s.dying).concat(fresh);
+    this.stalks = keep ? fresh.map((s) => ({ ...s, h: s.tgt, leaf: 1, delay: 0 })) : this.stalks.filter((s) => s.dying).concat(fresh);
   },
-  /* a key of the free keyboard: the stalk of that note lights up */
-  flash(m) { for (const s of this.stalks) if (!s.dying && s.m % 12 === m % 12) { s.flash = 1; this.drop(s, 2); } },
+  /* a key of the free keyboard: the stalk of that note lights up and drops a leaf */
+  flash(m) { for (const s of this.stalks) if (!s.dying && s.m % 12 === m % 12) { s.flash = 1; this.drop(s, 1); } },
   drop(s, n) {
     for (let i = 0; i < n; i++)
-      this.leaves.push({ x: s.x + (Math.random() - .5) * 6, y: this.gy - s.h - 2, vx: (Math.random() - .5) * .02, vy: -.01 - Math.random() * .02, life: 2200 + Math.random() * 1200, c: Math.random() < .5 ? TLP.lime[0] : TLP.jade[1] });
+      this.leaves.push({ x: s.x + (Math.random() - .5) * 8, y: this.gy - s.h - 1, vx: (Math.random() - .5) * .012, vy: .004 + Math.random() * .006,
+                         life: 3000 + Math.random() * 1500, ph: Math.random() * 6.3 });
   },
-  setDense(n) { this.dense = Math.min(this.far.length, n); Scene.poke(); },
+  /* the streak, as daylight: full dawn at 8 correct answers in a row */
+  setDawn(n) { this.dawnT = Math.min(1, n / 8); Scene.poke(); },
   update(dt) {
     for (const s of this.stalks) {
-      if (s.dying) { s.h -= .12 * dt; continue; }
+      if (s.dying) { s.leaf = Math.max(0, s.leaf - dt / 200); if (s.leaf <= 0) s.h -= .14 * dt; continue; }
       if (s.delay > 0) { s.delay -= dt; continue; }
-      s.h = Math.min(s.tgt, s.h + .05 * dt);                    /* bamboo grows fast: 50 pixels a second */
-      s.flash = Math.max(0, s.flash - dt / 600);
+      s.h = Math.min(s.tgt, s.h + .055 * dt);                   /* bamboo grows fast: 55 pixels a second */
+      if (s.h >= s.tgt) s.leaf = Math.min(1, s.leaf + dt / 450);
+      s.flash = Math.max(0, s.flash - dt / 700);
     }
     this.stalks = this.stalks.filter((s) => !s.dying || s.h > 0);
-    if (this.cheerT > 0) {
-      this.cheerT -= dt;
-      if (this.cheerT <= 0) for (const s of this.stalks) if (!s.dying) this.drop(s, 2);
+    if (this.cheerT > 0) { this.cheerT -= dt; if (this.cheerT <= 0) for (const s of this.stalks) if (!s.dying) this.drop(s, 2); }
+    this.dawn += (this.dawnT - this.dawn) * Math.min(1, dt / 1800);
+    for (const l of this.leaves) { l.life -= dt; l.x += (l.vx + Math.sin(l.life / 260 + l.ph) * .01) * dt; l.y += l.vy * dt; }
+    this.leaves = this.leaves.filter((l) => l.life > 0 && l.y < this.gy + 1);
+  },
+  /* a bamboo leaf: a slim blade from (x, y), drooping by slope a, darker on its underside in the middle */
+  leafAt(x, y, dir, a, len, cols) {
+    const S = Scene;
+    for (let i = 1; i <= len; i++) {
+      const px = x + dir * i, py = y + Math.round(i * a);
+      S.put(px, py, i === len ? cols[0] : cols[1]);
+      if (i > len * .25 && i < len * .75) S.put(px, py + 1, cols[2]);
     }
-    this.far.forEach((f, i) => { const t = i < this.dense ? this.gy - f.top : 0; f.h += (t - f.h) * Math.min(1, dt / 500); });
-    for (const l of this.leaves) { l.life -= dt; l.vy += .00003 * dt; l.x += (l.vx + Math.sin(l.life / 180) * .012) * dt; l.y += l.vy * dt; }
-    this.leaves = this.leaves.filter((l) => l.life > 0 && l.y < this.gy);
   },
   stalk(s) {
-    const S = Scene, gy = this.gy, h = Math.floor(s.h), sp = this.sp;
+    const S = Scene, gy = this.gy, h = Math.floor(s.h), sp = this.sp, k = s.gold ? GV.gold : GV.green;
     if (h <= 0) return;
-    const cols = s.gold ? GOLD : GREEN, lit = s.flash > .5;
-    const sway = Math.sin(S.time * .0015 + s.ph) * (.4 + S.lv * 2.2);
-    let dx = 0;
+    const lit = s.flash > .3, c = (lit ? k.node : k.c).map(RGB), n = k.node.map(RGB), dark = RGB(k.dark);
+    const sway = Math.sin(S.time * .0012 + s.ph) * (.4 + S.lv * 1.8), bend = (y) => Math.round(sway * Math.pow(y / Math.max(10, h), 2));
+    const grown = h >= s.tgt - .5 && !s.dying;
     for (let y = 0; y < h; y++) {
-      dx = Math.round(sway * Math.pow(y / Math.max(8, h), 2));
-      const X = s.x + dx, Y = gy - y;
-      if (y % sp === sp - 1 && y < h - 1) {      /* (sp pixels to a semitone) */                     /* a joint: a darker ring, a little wider */
-        S.put(X - 2, Y, cols[2]); S.put(X - 1, Y, cols[1]); S.put(X, Y, cols[2]); S.put(X + 1, Y, cols[3]); S.put(X + 2, Y, cols[3]);
-      } else {
-        S.put(X - 1, Y, lit ? TLP.sand[0] : cols[0]); S.put(X, Y, lit ? cols[0] : cols[1]); S.put(X + 1, Y, cols[2]);
+      const X = s.x + bend(y), Y = gy - y;
+      if (!grown && y >= h - 2) {                                /* a growing shoot: a pointed sheath */
+        S.put(X, Y, c[1]); if (y === h - 2) S.put(X + 1, Y, c[2]);
+        continue;
       }
+      if (y % sp === sp - 1) {                                   /* a joint: a pale ring, a little wider */
+        S.put(X - 2, Y, n[3]); S.put(X - 1, Y, n[0]); S.put(X, Y, n[1]); S.put(X + 1, Y, n[2]); S.put(X + 2, Y, n[3]);
+      } else if (y % sp === sp - 2) {                            /* the shadow under it */
+        S.put(X - 1, Y, c[1]); S.put(X, Y, c[2]); S.put(X + 1, Y, c[3]); S.put(X + 2, Y, dark);
+      } else { S.put(X - 1, Y, c[0]); S.put(X, Y, c[1]); S.put(X + 1, Y, c[2]); S.put(X + 2, Y, c[3]); }
     }
-    if (h >= s.tgt - .5 && !s.dying) {                          /* grown: leaves from the top joint */
-      const X = s.x + dx, Y = gy - h + 1, lean = Math.round(sway);
-      for (let i = 1; i <= 5; i++) {
-        S.put(X - 1 - i, Y - (i >> 1) + (i === 5 ? lean : 0), i > 3 ? TLP.jade[1] : TLP.lime[1]);
-        if (i > 1 && i < 5) S.put(X - 1 - i, Y - (i >> 1) + 1, TLP.jade[2]);
-        S.put(X + 1 + i, Y + 2 - (i >> 1) + (i === 5 ? lean : 0), i > 3 ? TLP.jade[1] : TLP.lime[1]);
-        if (i > 1 && i < 5) S.put(X + 1 + i, Y + 3 - (i >> 1), TLP.jade[2]);
-      }
-    } else S.put(s.x + dx, gy - h, cols[0]);                    /* a growing shoot: a pointed tip */
+    if (!grown && s.leaf <= 0) return;
+    /* leaves: a fan at the top, a twig with two leaves at every other joint above the middle */
+    const L = GV.leaf.map(RGB), grow = Math.max(0, Math.min(1, s.leaf)), wav = Math.sin(S.time * .002 + s.ph) * .12 * (1 + S.lv * 2);
+    const top = h - 1, X = s.x + bend(top), Y = gy - top;
+    const len = (n) => Math.max(1, Math.round(n * grow));
+    this.leafAt(X - 1, Y, -1, -.45 + wav, len(6), L); this.leafAt(X + 1, Y, 1, -.45 - wav, len(6), L);
+    this.leafAt(X - 1, Y + 1, -1, .25 + wav, len(7), L); this.leafAt(X + 2, Y + 1, 1, .25 - wav, len(7), L);
+    let side = s.m % 2 ? 1 : -1;
+    for (let y = top - 2 * sp; y > h * .45; y -= 2 * sp) {
+      const xx = s.x + bend(y) + (side > 0 ? 2 : -1), yy = gy - y;
+      S.put(xx + side, yy - 1, L[2]); S.put(xx + 2 * side, yy - 2, L[2]);
+      this.leafAt(xx + 2 * side, yy - 2, side, .35 + wav, len(6), L); this.leafAt(xx + 2 * side, yy - 1, side, .9 + wav, len(4), L);
+      side = -side;
+    }
   },
   render() {
-    const S = Scene, W = this.W, H = this.H, gy = this.gy;
-    S.sky([TLP.ground, TLP.sage[3], TLP.sage[3], TLP.sage[2]], gy + 1);
-    for (let i = 0; i < W / 14; i++) {                          /* a few stars above the mist */
-      const x = Math.floor(hash2(i, 7) * W), y = Math.floor(hash2(i, 9) * (gy + 1) / 4 - 1), v = Math.sin(S.time * .0012 + i * 2.1);
-      if (v > -.2 && y >= 0) S.put(x, y, v > .85 ? TLP.sand[0] : TLP.sage[2]);
-    }
-    for (const f of this.far) {                                 /* the grove behind: dark stalks in the mist */
-      const h = Math.round(f.h);
-      for (let y = 0; y < h; y++) {
-        const Y = gy - y, joint = y % 5 === 4;
-        S.put(f.x, Y, joint ? TLP.jade[3] : TLP.jade[2]); S.put(f.x + 1, Y, TLP.jade[3]);
-        if (joint) S.put(f.x - 1, Y, TLP.jade[3]);
+    const S = Scene, W = this.W, H = this.H, gy = this.gy, t = S.time, d = this.dawn;
+    const sky = GV.night.map((c, i) => mixc(c, GV.dawn[i], d)), band = (gy + 1) / sky.length, at = (y) => Math.min(sky.length - 1, Math.max(0, Math.floor(y / band)));
+    S.sky(sky.map(RGB), gy + 1);
+    for (const f of this.far) {                                 /* far stalks: silhouettes that fade into the sky */
+      for (let y = 0; y <= gy; y++) {
+        const c = sky[at(y)], joint = (y + f.off) % f.joint === 0;
+        S.put(f.x, y, RGB(mixc(c, GV.shade, joint ? f.k * .4 : f.k)));
+        if (f.w > 1) S.put(f.x + 1, y, RGB(mixc(c, GV.shade, f.k * 1.2)));
       }
-      if (h > 4) { S.put(f.x - 1, gy - h, TLP.jade[2]); S.put(f.x - 2, gy - h + 1, TLP.jade[2]); S.put(f.x + 2, gy - h + 1, TLP.jade[2]); }
     }
-    const drift = Math.floor(S.time / 160);
-    for (let y = gy - 12; y <= gy; y++) {                       /* the mist drifts slowly */
-      const d = (y - gy + 12) / 12 * .5;
-      for (let x = 0; x < W; x++) if (hash2(x + drift * (1 + (y & 1)), y) < d * .6) S.put(x, y, TLP.sage[1]);
+    const M = GV.mid.map(RGB);
+    for (const m of this.mids) {                                /* nearer stalks, darker, swaying a little */
+      const sw = Math.sin(t * .0009 + m.ph) * (.3 + S.lv);
+      for (let y = 0; y <= gy; y++) {
+        const X = m.x + Math.round(sw * Math.pow(1 - y / gy, 2)), joint = (y + m.off) % m.joint === 0;
+        S.put(X - 1, y, joint ? M[1] : M[0]); S.put(X, y, joint ? M[1] : M[0]); S.put(X + 1, y, M[2]);
+      }
+      this.leafAt(m.x - 1, m.spray, -1, .5, 6, [M[1], M[0], M[2]]); this.leafAt(m.x + 1, m.spray + 5, 1, .4, 6, [M[1], M[0], M[2]]);
     }
-    for (let y = gy + 1; y < H; y++) for (let x = 0; x < W; x++) S.put(x, y, y === gy + 1 && hash2(x, y) < .3 ? TLP.soil : TLP.ground);
+    const mist = mixc(GV.mist[0], GV.mist[1], d), mid = gy - 8;
+    for (let y = gy - 24; y <= gy; y++) {                       /* the mist: see-through, in four soft steps, drifting */
+      const base = Math.max(0, 1 - Math.abs(y - mid) / 14);
+      for (let x = 0; x < W; x++) {
+        const v = base * (.7 + .3 * Math.sin(x * .045 + t * .0003 + y * .22)) * 4, q = Math.floor(v) + (S.dith(x, y, v % 1) ? 1 : 0);
+        if (q > 0) S.tint(x, y, mist, q * .15);
+      }
+    }
+    for (let y = gy + 1; y < H; y++) for (let x = 0; x < W; x++) S.put(x, y, RGB(GV.ground));
+    const G = GV.grass.map(RGB);
+    for (const g of this.tufts) for (let i = 0; i < g.h; i++) S.put(g.x, gy - i + 1, G[g.c]);
     for (const s of this.stalks) this.stalk(s);
-    for (const l of this.leaves) { S.put(l.x, l.y, l.c); if (l.life > 1500) S.put(l.x + 1, l.y, TLP.jade[2]); }
+    const L = GV.leaf.map(RGB);
+    for (const l of this.leaves) { const o = Math.sin(l.life / 200 + l.ph) > 0; S.put(l.x, l.y, L[1]); S.put(l.x + (o ? 1 : 0), l.y + (o ? 0 : 1), L[2]); }
   },
 };
 
@@ -1016,14 +1068,14 @@ function showInterval(root, s, dir, together, cheer) {
 function showScale(root, sc, cheer) { Grove.show([sc.iv.map((i) => N(root + i, i === 0))], false, cheer); }
 function showChord(root, c, cheer) { Grove.show([c.iv.map((i) => N(root + i, i === 0))], true, cheer); }
 function showMelody(cheer) { const t = S.tonic; Grove.show([[N(t, true)], S.round.seq.map((s) => N(t + s, s === 0))], false, cheer); }
-function thicken() { Grove.setDense(S.mode === "free" ? 14 : 3 + stat(S.mode).streak * 3); }
+function thicken() { Grove.setDawn(S.mode === "free" ? 3 : stat(S.mode).streak); }
 
 /* ---- exercises ---- */
 const MODES = [
   { id: "deg",  name: "Degrees",    lcd: "Scale degrees" },
   { id: "mel",  name: "Melodic",    lcd: "Melodic intervals" },
   { id: "har",  name: "Harmonic",   lcd: "Harmonic intervals" },
-  { id: "cmp",  name: "Wider?",     lcd: "Which is wider" },
+  { id: "cmp",  name: "Wider?",     lcd: "Which is wider?" },
   { id: "sca",  name: "Scales",     lcd: "Scales and modes" },
   { id: "chd",  name: "Chords",     lcd: "Chord quality" },
   { id: "dic",  name: "Dictation",  lcd: "Melodic dictation" },
@@ -1033,10 +1085,10 @@ const DIFFS = {
   deg: [["Easy", "degrees 1–5"], ["Medium", "the whole scale"], ["Hard", "all 12 notes"]],
   mel: [["Easy", "4 intervals"], ["Medium", "8 intervals"], ["Hard", "all 12"]],
   har: [["Easy", "4 intervals"], ["Medium", "8 intervals"], ["Hard", "all 12"]],
-  cmp: [["Easy", "5+ semitones apart"], ["Medium", "2+ semitones apart"], ["Hard", "1 semitone apart"]],
+  cmp: [["Easy", "5+ semitones different"], ["Medium", "2+ semitones different"], ["Hard", "any difference"]],
   sca: [["Easy", "major or minor"], ["Medium", "the 7 modes"], ["Hard", "all 14 scales"]],
-  chd: [["Easy", "major or minor"], ["Medium", "6 triads"], ["Hard", "all 12, with 7ths"]],
-  dic: [["Easy", "3 notes: 1 3 5"], ["Medium", "4 notes"], ["Hard", "5 notes"]],
+  chd: [["Easy", "major or minor"], ["Medium", "6 three-note chords"], ["Hard", "all 12, with 7ths"]],
+  dic: [["Easy", "3 notes from 1, 3, 5"], ["Medium", "4 notes"], ["Hard", "5 notes"]],
 };
 const HASDIFF = Object.keys(DIFFS);
 
@@ -1075,9 +1127,9 @@ function degAlt(semi) { const s = pc(semi); return S.naming === "deg" ? NAMES_SO
 /* the answer in words: "G, degree 5 of C major (sol)"; the chosen naming leads */
 function degSay(semi) {
   const s = pc(semi), k = keyLabel();
-  if (S.naming === "deg") return `<b>${NAMES_DEG[s]}</b>, which is ${spell(s)} in ${k} (${NAMES_SOLF[s]})`;
-  if (S.naming === "solf") return `<b>${NAMES_SOLF[s]}</b>, degree ${NAMES_DEG[s]} of ${k} (${spell(s)})`;
-  return `<b>${spell(s)}</b>, degree ${NAMES_DEG[s]} of ${k} (${NAMES_SOLF[s]})`;
+  if (S.naming === "deg") return `<b>${NAMES_DEG[s]}</b>: ${spell(s)} (${NAMES_SOLF[s]}) in ${k}`;
+  if (S.naming === "solf") return `<b>${NAMES_SOLF[s]}</b>, degree ${NAMES_DEG[s]} (${spell(s)}) of ${k}`;
+  return `<b>${spell(s)}</b>, degree ${NAMES_DEG[s]} (${NAMES_SOLF[s]}) of ${k}`;
 }
 function keyLabel() { return `${tonicName()} ${S.minor ? "minor" : "major"}`; }
 
@@ -1198,7 +1250,7 @@ function padHTML(main, sub) { return `<span class="hz${main.length > 9 ? " long"
 function degSet() { const l = lvl(); if (l === 0) return S.minor ? [0, 2, 3, 5, 7] : [0, 2, 4, 5, 7]; if (l === 1) return (S.minor ? DEG_MIN : DEG_MAJ).slice(); return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]; }
 RENDER.deg = () => {
   transport("Play", "Note only", "play");
-  area.innerHTML = `<div class="task">Which degree of the scale is this note?<span class="hint">A cadence sets the key. Then one note sounds. Name its degree in the key.</span></div>` + padGridN(degSet().length);
+  area.innerHTML = `<div class="task">Which degree of the scale is this note?<span class="hint">Press “Play”. A few chords (a cadence) set the key. Then one note sounds. Name its degree.</span></div>` + padGridN(degSet().length);
   doReveal = revealDeg; nextRound = newDegRound;
   playMain = () => playDegQuestion(true); playAlt = () => playDegQuestion(false);
   newDegRound();
@@ -1236,7 +1288,7 @@ function answerDeg(s, btn) {
     feedback("ok", `✓ Correct: ${degSay(t)}.${S.res ? ' <span class="ch">Now hear it resolve to the tonic.</span>' : ""}`);
     const r = S.round;                                         /* (the next question may have started by then) */
     if (S.res) setTimeout(() => { if (S.round === r) playResolution(r.midi, t); }, 260);
-  } else feedback(near ? "info" : "no", `${near ? "Close, one semitone off." : "✗"} It was ${degSay(t)}. You picked ${degName(s)}.`);
+  } else feedback(near ? "info" : "no", `${near ? "✗ Not quite: one semitone off." : "✗"} It was ${degSay(t)}. You picked ${degName(s)}.`);
   record(ok ? "ok" : "wrong"); resolveUI(); showDegree(t, ok);
 }
 
@@ -1262,28 +1314,32 @@ function playIv(mode, rate) {
 }
 RENDER.mel = () => {
   transport("Play", "Slower", "play");
-  area.innerHTML = `<div class="task">Which interval is it?<span class="hint">${lvl() === 0 ? "The second note is always higher." : "The second note may be higher or lower. Only the size counts."} The Reference below has a song for each interval.</span></div>` + padGridN(ivSet().length);
+  area.innerHTML = `<div class="task">Which interval is it?<span class="hint">${lvl() === 0 ? "The second note is always higher." : "The second note may be higher or lower. Only the size counts."} The “Reference” below has a song for each interval.</span></div>` + padGridN(ivSet().length);
   doReveal = () => revealIv("mel"); nextRound = () => newIvRound("mel");
   playMain = () => playIv("mel", 1); playAlt = () => playIv("mel", .6);
   newIvRound("mel");
 };
 RENDER.har = () => {
   transport("Play", "One by one", "swap");
-  area.innerHTML = `<div class="task">Which harmonic interval is it?<span class="hint">Both notes sound at once. One by one plays them in turn, but try to name it first.</span></div>` + padGridN(ivSet().length);
+  area.innerHTML = `<div class="task">Which harmonic interval is it?<span class="hint">Both notes sound at once. Try to name the interval before you press “One by one”: it plays the notes in turn.</span></div>` + padGridN(ivSet().length);
   doReveal = () => revealIv("har"); nextRound = () => newIvRound("har");
   playMain = () => playIv("har", 1); playAlt = () => playIv("mel", .8);
   newIvRound("har");
 };
 function ivDirWord() { return S.mode === "har" ? "" : S.round.dir === 1 ? ", ascending" : ", descending"; }
 /* "a minor 3rd (m3), ascending. Think of ..." */
-function ivLine(iv) { return `${iv.s === 12 ? "an" : "a"} <b>${iv.nm.toLowerCase()}</b> (${iv.sh})${ivDirWord()}. <span class="ch">Think of ${iv.song}.</span>`; }
+function ivSong(iv) {                                           /* a song that moves the same way as the question */
+  if (S.mode === "mel" && S.round.dir === -1) return iv.down ? `Think of ${iv.down}.` : `Think of ${iv.up}, but going down.`;
+  return `Think of ${iv.up}.`;
+}
+function ivLine(iv) { return `${iv.s === 12 ? "an" : "a"} <b>${iv.nm.toLowerCase()}</b> (${iv.sh})${ivDirWord()}. <span class="ch">${ivSong(iv)}</span>`; }
 function revealIv() { const t = S.round.s; markPad("s", t); feedback("info", `Skipped. It was ${ivLine(IVLBY[t])}`); showInterval(S.round.root, t, S.round.dir, S.mode === "har", false); }
 function answerIv(mode, s, btn) {
   if (btn.disabled || S.resolved) return;
   const t = S.round.s, ok = s === t, near = Math.abs(s - t) === 1;
   markPad("s", t); if (!ok) btn.classList.add(near ? "near" : "wrong");
   noteItem(mode, t, ok);
-  feedback(ok ? "ok" : near ? "info" : "no", (ok ? "✓ Correct: " : near ? "Close, one semitone off. It was " : "✗ It was ") + ivLine(IVLBY[t]));
+  feedback(ok ? "ok" : near ? "info" : "no", (ok ? "✓ Correct: " : near ? "✗ Not quite: one semitone off. It was " : "✗ It was ") + ivLine(IVLBY[t]));
   record(ok ? "ok" : "wrong"); resolveUI(); showInterval(S.round.root, t, S.round.dir, mode === "har", ok);
 }
 
@@ -1294,7 +1350,7 @@ RENDER.cmp = () => {
     `<button class="btn btn-ghost" id="altBtn">${pix("play")}Second</button>` +
     `<button class="btn btn-ghost" id="stopBtn">${pix("stop")}Stop</button>`;
   $("playBtn").onclick = () => playCmp("a"); $("altBtn").onclick = () => playCmp("b"); $("stopBtn").onclick = () => AE.stopAll();
-  area.innerHTML = `<div class="task">Which interval is wider?<span class="hint">You need no theory here, only your ears. It is a good first exercise: it trains your sense of distance before you learn the names.</span></div>
+  area.innerHTML = `<div class="task">Which interval is wider?<span class="hint">You don’t need any theory, just your ears. It is a good first exercise: it trains your sense of distance before you learn the names.</span></div>
     <div class="choicewrap"><button class="choice" id="chA">First is wider</button><button class="choice" id="chB">Second is wider</button></div>`;
   doReveal = revealCmp; nextRound = newCmpRound;
   playMain = () => playCmp("a"); playAlt = () => playCmp("b");
@@ -1366,7 +1422,7 @@ function answerSca(id, btn) {
 RENDER.chd = () => {
   transport("Play", "One by one", "swap");
   const n = CH_LV[lvl()].length;
-  area.innerHTML = `<div class="task">Which chord is it?<span class="hint">All the notes sound at once. One by one plays them in turn, so the 3rd and the 7th stand out.</span></div>` + padGridW(n, n <= 2 ? 2 : n <= 6 ? 3 : 4, 2);
+  area.innerHTML = `<div class="task">Which chord is it?<span class="hint">All the notes sound at once. The “One by one” button plays them in turn, so you can pick out the 3rd and, in bigger chords, the 7th.</span></div>` + padGridW(n, n <= 2 ? 2 : n <= 6 ? 3 : 4, 2);
   doReveal = revealChd; nextRound = newChdRound;
   playMain = () => playChd(false); playAlt = () => playChd(true);
   newChdRound();
@@ -1389,7 +1445,7 @@ function playChd(arp) {
 /* a chord on the round's root: Am, F♯dim7, C */
 const ROOTS = ["C", "C♯", "D", "E♭", "E", "F", "F♯", "G", "A♭", "A", "B♭", "B"];
 function chSym(c) { return ROOTS[pc(S.round.root)] + (c.id === "maj" ? "" : c.lat); }
-function chSay(c) { return isLat() ? chSym(c) : c.nm; }
+function chSay(c) { return isLat() ? `${chSym(c)} (${c.nm.toLowerCase()})` : c.nm; }
 function chdLine(id) { const c = CHBY[id]; return isLat() ? `<b>${chSym(c)}</b> <span class="ch">(${c.nm.toLowerCase()})</span>.` : `<b>${c.nm}</b> <span class="ch">(${chSym(c)})</span>.`; }
 function revealChd() { const t = S.round.id; markPad("id", t); feedback("info", `Skipped. It was ${chdLine(t)}`); showChord(S.round.root, CHBY[t], false); }
 function answerChd(id, btn) {
@@ -1405,7 +1461,7 @@ function dicSet() { return lvl() === 0 ? (S.minor ? [0, 3, 7] : [0, 4, 7]) : (S.
 function dicLen() { return [3, 4, 5][lvl()]; }
 RENDER.dic = () => {
   transport("Play", "Cadence", "play");
-  area.innerHTML = `<div class="task">Write the tune in scale degrees<span class="hint">A cadence sets the key, then a short tune plays. Tap its degrees in order. This is how you work out music by ear.</span></div>
+  area.innerHTML = `<div class="task">Write the tune in scale degrees<span class="hint">A few chords set the key, then a short tune plays. Tap its degrees in order. You use the same skill to figure out music by ear.</span></div>
     <div class="slots" id="slots"></div>` + padGridN(dicSet().length) +
     `<div class="dirs" style="margin:10px 0 0"><button class="btn btn-ghost" id="dicBack">${pix("back")}Erase</button><button class="btn btn-accent" id="dicCheck">Check</button></div>`;
   doReveal = revealDic; nextRound = newDicRound;
@@ -1445,15 +1501,19 @@ function playDic(what) {
   r.seq.forEach((s, i) => c.ev.push({ m: S.tonic + s, t: st + i * b * .72, d: b * (i === r.seq.length - 1 ? 1.5 : .78) }));
   AE.seq(c.ev);
 }
-function dicTune() { return S.round.seq.map((s) => degName(s)).join(" – "); }
-function revealDic() { const r = S.round; drawSlots(r.seq.map((s, i) => r.input[i] === s)); lockPads(); $("dicCheck").disabled = true; feedback("info", `Skipped. The tune was <b>${dicTune()}</b> in ${keyLabel()}.`); showMelody(false); }
+/* the tune in degrees, with its notes after it: "1 – 4 – 7 – 5 (B♭ – E♭ – A – F)" */
+function dicTune() {
+  const r = S.round.seq, head = S.naming === "solf" ? r.map((s) => NAMES_SOLF[s]) : r.map((s) => NAMES_DEG[s]);
+  return `<b>${head.join(" – ")}</b> (${r.map((s) => spell(s)).join(" – ")})`;
+}
+function revealDic() { const r = S.round; drawSlots(r.seq.map((s, i) => r.input[i] === s)); lockPads(); $("dicCheck").disabled = true; feedback("info", `Skipped. The tune was ${dicTune()} in ${keyLabel()}.`); showMelody(false); }
 function dicCheck() {
   if (S.resolved) return; const r = S.round;
   if (r.input.length < r.seq.length) { feedback("info", "Fill every slot first, or press Skip."); return; }
   const marks = r.seq.map((s, i) => r.input[i] === s), right = marks.filter(Boolean).length, ok = right === r.seq.length;
   r.seq.forEach((s, i) => noteItem("dic", s, marks[i]));
   drawSlots(marks); lockPads(); $("dicCheck").disabled = true;
-  feedback(ok ? "ok" : "no", (ok ? "✓ All correct: " : `✗ You got ${right} of ${r.seq.length}. The tune was `) + `<b>${dicTune()}</b> in ${keyLabel()}.`);
+  feedback(ok ? "ok" : "no", (ok ? "✓ All correct: " : `✗ You got ${right} of ${r.seq.length}. The tune was `) + `${dicTune()} in ${keyLabel()}.`);
   record(ok ? "ok" : "wrong"); resolveUI(); showMelody(ok);
 }
 
@@ -1464,7 +1524,7 @@ RENDER.free = () => {
     `<button class="btn btn-accent" id="playBtn">${pix("play")}Tonic drone</button>` +
     `<button class="btn btn-ghost" id="altBtn">${pix("play")}Play scale</button>` +
     `<button class="btn btn-ghost" id="stopBtn">${pix("stop")}Stop</button>`;
-  area.innerHTML = `<div class="task">Hear how each degree pulls to the tonic<span class="hint">Turn on the drone and press the keys. Some degrees lean toward the tonic; others rest on it.</span></div>
+  area.innerHTML = `<div class="task">Hear which degrees pull to the tonic<span class="hint">Turn on the drone and press the keys. Some degrees sound unstable and pull towards the tonic; others sound at rest.</span></div>
     <div class="advrow" style="padding-top:0;margin-bottom:12px">
       <div class="set"><label for="frKey">Tonic</label><select id="frKey"></select></div>
       <div class="set"><label for="frSca">Scale</label><select id="frSca"></select></div>
@@ -1538,7 +1598,7 @@ function buildRef() {
   const g = $("refGrid"); g.innerHTML = "";
   IVL.filter((i) => i.s > 0).forEach((iv) => {
     const d = document.createElement("button"); d.className = "refcard";
-    d.innerHTML = `<div class="hz">${iv.sh}</div><div class="nm">${iv.nm}</div><div class="ds">Think of ${iv.song}.</div><span class="vw">${iv.s} semitone${iv.s === 1 ? "" : "s"}</span>`;
+    d.innerHTML = `<div class="hz">${iv.sh}</div><div class="nm">${iv.nm}</div><div class="ds">Up: ${iv.up}.${iv.down ? ` Down: ${iv.down}.` : ""}</div><span class="vw">${iv.s} semitone${iv.s === 1 ? "" : "s"}</span>`;
     d.onclick = () => { const b = B(); AE.seq([{ m: 60, t: 0, d: b * .9 }, { m: 60 + iv.s, t: b, d: b * 1.8 }]); };
     g.appendChild(d);
   });
@@ -1560,7 +1620,7 @@ function updateSummary() {
   let head;
   if (S.mode === "free") head = `Tonic ${tonicName()}`;
   else if (S.mode === "deg" || S.mode === "dic") head = keyLabel();
-  else if (S.mode === "cmp") { const g = [5, 2, 1][lvl()]; head = `${g}${g > 1 ? "+ semitones" : " semitone"} apart`; }
+  else if (S.mode === "cmp") { const g = [5, 2, 1][lvl()]; head = g > 1 ? `sizes differ by ${g}+ semitones` : "any difference in size"; }
   else if (S.mode === "sca") head = `${SC_LV[lvl()].length} scales`;
   else if (S.mode === "chd") head = `${CH_LV[lvl()].length} chords`;
   else head = `${ivSet().length} intervals`;

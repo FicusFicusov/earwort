@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Earwort · EQ ear training</title>
-<meta name="description" content="Free EQ ear training for mixing. Hear which frequency is boosted or cut, spot the EQ, match a frequency, judge the width of a band. It runs in your browser, with no sign-up and no ads.">
+<meta name="description" content="Hear what the EQ did: free ear training for mixing. Find the boosted or cut frequency, spot the EQ, match a frequency and judge the width of a band. It runs in your browser, with no sign-up and no ads.">
 <meta name="color-scheme" content="dark light">
 <style>
 /* ===================================================================================================== shared ===
@@ -265,12 +265,12 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
 </style>
 </head>
 <body>
-<div id="jsWarn">The buttons don't work in a file preview.<br>Tap Share → <b>Open in Safari</b> (or Chrome) to start the trainer.</div>
+<div id="jsWarn">The buttons don’t work in a file preview.<br>Tap Share → <b>Open in Safari</b> (or Chrome) to start the trainer.</div>
 <div class="wrap">
   <header>
     <div class="ttl">
       <h1><span class="a">Ear</span><span class="b">wort</span></h1>
-      <p>Train your ear for EQ and mixing · free</p>
+      <p>Hear what the EQ did · free ear training</p>
     </div>
     <div class="hbtns">
       <button class="btn support" id="supportBtn" aria-haspopup="dialog"><span data-pi="heart"></span>Support</button>
@@ -309,9 +309,9 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
       <div class="module" id="difficultyModule">
         <div class="mlabel"><span class="num">01</span>Difficulty</div>
         <div class="seg" id="diffSeg" role="group" aria-label="Difficulty">
-          <button data-d="oct6" class="on" aria-pressed="true"><span class="t">Easy</span><span class="s">6 bands</span><span class="s">±15 dB</span></button>
-          <button data-d="oct9" aria-pressed="false"><span class="t">Medium</span><span class="s">9 bands</span><span class="s">±10 dB</span></button>
-          <button data-d="third" aria-pressed="false"><span class="t">Hard</span><span class="s">26 bands</span><span class="s">±6 dB</span></button>
+          <button data-d="oct6" class="on" aria-pressed="true"><span class="t">Easy</span><span class="s">6 bands</span><span class="s">15 dB</span></button>
+          <button data-d="oct9" aria-pressed="false"><span class="t">Medium</span><span class="s">9 bands</span><span class="s">10 dB</span></button>
+          <button data-d="third" aria-pressed="false"><span class="t">Hard</span><span class="s">26 bands</span><span class="s">6 dB</span></button>
         </div>
       </div>
       <div class="module" id="transportModule">
@@ -348,21 +348,21 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
         <div id="knQ"></div>
         <div id="knVol"></div>
       </div>
-      <div class="hint2">You rarely need these: Difficulty sets the bands and the gain for you. Drag a knob up or down, or turn it with the mouse wheel or the arrow keys.</div>
+      <div class="hint2">Change the sound source here, for example to your own track. “Difficulty” already sets the bands and the gain. Drag a knob up or down. On a computer you can also use the mouse wheel, or click the knob and press the arrow keys.</div>
     </div>
   </section>
 
   <section class="card collapsed" id="refCard" style="--c: var(--sea)">
     <button class="chead" id="refToggle" aria-expanded="false" aria-controls="refBody">
       <span class="ico" data-pi="book"></span><span class="ct">Reference: how each band sounds</span>
-      <span class="csum">a vowel for each band</span><span data-pi="chev" class="chev"></span>
+      <span class="csum">a speech sound for 7 bands</span><span data-pi="chev" class="chev"></span>
     </button>
     <div class="cbody" id="refBody">
-      <div class="hint2" style="margin:0 0 12px">Click a card to hear its band boosted. Most bands have a vowel or a consonant to remember them by: a trick from studio practice.</div>
+      <div class="hint2" style="margin:0 0 12px">Choose a card to hear its band boosted. Seven of these eleven bands have a speech sound to help you remember them. Studio engineers use this trick.</div>
       <div class="refgrid" id="refGrid"></div>
       <details>
-        <summary>Why vowels work, and how to practise</summary>
-        <div class="hint2">Your brain remembers a sound better than a number. So link each band to a sound of speech: 250 Hz is <b>“oo”</b> as in boot, 500 Hz <b>“oh”</b> as in go, 1 kHz <b>“ah”</b> as in father, 2 kHz <b>“eh”</b> as in bed, 4 kHz <b>“ee”</b> as in see. Higher up, consonants take over: 8 kHz hisses like <b>“ss”</b>, 16 kHz like <b>“ts”</b>. Start on Easy, then step up. Ten minutes a day beats one long session.</div>
+        <summary>Why speech sounds help, and how to practise</summary>
+        <div class="hint2">A sound is often easier to remember than a number. So link each band to a speech sound: 250 Hz is <b>“oo”</b> as in boot, 500 Hz <b>“oh”</b> as in go, 1 kHz <b>“ah”</b> as in father, 2 kHz <b>“eh”</b> as in bed, 4 kHz <b>“ee”</b> as in see. Higher up, consonants take over: 8 kHz hisses like <b>“ss”</b>, 16 kHz like <b>“ts”</b>. Start on Easy, then move to Medium and Hard. Ten minutes a day is better than one long session.</div>
       </details>
     </div>
   </section>
@@ -370,14 +370,14 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
   <section class="supportcard" aria-label="Support Earwort">
     <div>
       <b>Support Earwort</b>
-      <span>Earwort is free, open source and ad-free. Your donation pays for new features and more free tools for musicians.</span>
+      <span>Earwort is free and has no ads. Donations pay for new features.</span>
       <span>Contact: <a href="https://t.me/ficusficusov" target="_blank" rel="noopener">Telegram channel</a> · <a href="mailto:iambemoli@gmail.com">iambemoli@gmail.com</a></span>
     </div>
     <button class="btn support" id="supportBtn2" aria-haspopup="dialog">Support</button>
   </section>
 
   <footer>
-    <kbd>Space</kbd> play or stop · <kbd>1</kbd>–<kbd>9</kbd> answer · <kbd>A</kbd> <kbd>B</kbd> play A or B · <kbd>→</kbd> next<br>
+    Keyboard: <kbd>Space</kbd> play or stop · <kbd>1</kbd>–<kbd>9</kbd> answer · <kbd>A</kbd> <kbd>B</kbd> play A or B · <kbd>→</kbd> or <kbd>N</kbd> next<br>
     Your browser makes the sound. Nothing leaves your device.<br>
     <a href="https://github.com/FicusFicusov/earwort" target="_blank" rel="noopener">Earwort on GitHub</a> · GPL-3.0
   </footer>
@@ -386,9 +386,9 @@ dialog#donate .x:hover { color: var(--ground); background: var(--rose); }
 <dialog id="donate" aria-labelledby="donateTitle">
   <form method="dialog"><button class="x" aria-label="Close"><span data-pi="close"></span></button></form>
   <h2 id="donateTitle">Support Earwort</h2>
-  <p>Earwort is free, open source and ad-free. A donation is a gift, not a payment: it pays for new features and more free tools for musicians. Thank you for helping it grow.</p>
+  <p>Earwort is free and open source, with no ads. A donation is a gift: you get nothing extra for it. It funds new features and more free tools for musicians and sound engineers. Thank you.</p>
   <div id="wallets"></div>
-  <p class="note">Send only the coin named, on the network named. Anything else is lost. A crypto transfer is a voluntary gift: it buys nothing.</p>
+  <p class="note">Send only the coin named, on the network named. Anything else is lost.</p>
   <h3>Contact</h3>
   <a class="opt" href="https://t.me/ficusficusov" target="_blank" rel="noopener"><span class="glyph" aria-hidden="true">➤</span><span class="tx"><span class="nm">Telegram channel</span><span class="ad">t.me/ficusficusov</span></span><span class="go">↗</span></a>
   <a class="opt" href="mailto:iambemoli@gmail.com"><span class="glyph" aria-hidden="true">@</span><span class="tx"><span class="nm">Email</span><span class="ad">iambemoli@gmail.com</span></span><span class="go">↗</span></a>
@@ -580,7 +580,10 @@ const Scene = {
     }
     this.lv += (v - this.lv) * (v > this.lv ? .5 : .08);
   },
-  frame(dt) { this.time += dt; this.listen(); this.art.update(dt); this.art.render(); this.ctx.putImageData(this.img, 0, 0); },
+  frame(dt) {
+    if (!this.img) { this.fit(true); if (!this.img) return; }   /* (a page opened in a hidden tab has no size yet) */
+    this.time += dt; this.listen(); this.art.update(dt); this.art.render(); this.ctx.putImageData(this.img, 0, 0);
+  },
   loop(now) {
     requestAnimationFrame((t) => this.loop(t));
     const dt = now - this.last;
@@ -592,14 +595,20 @@ const Scene = {
   still() { if (!this.buf) return; for (let i = 0; i < 60; i++) this.art.update(64); this.art.render(); this.ctx.putImageData(this.img, 0, 0); },
   poke() { if (REDUCED) this.still(); },
   put(x, y, c) { x |= 0; y |= 0; if (x >= 0 && y >= 0 && x < this.W && y < this.H) this.buf[y * this.W + x] = c; },
+  /* pull the pixel's colour toward 0xRRGGBB by t (0..1): fog, glow */
+  tint(x, y, rgb, t) {
+    x |= 0; y |= 0; if (x < 0 || y < 0 || x >= this.W || y >= this.H) return;
+    const i = y * this.W + x, p = this.buf[i], m = (a, b) => Math.round(a + (b - a) * t);
+    this.buf[i] = (0xFF000000 | m(p >> 16 & 255, rgb & 255) << 16 | m(p >> 8 & 255, rgb >> 8 & 255) << 8 | m(p & 255, rgb >> 16 & 255)) >>> 0;
+  },
   /* ordered dithering: is (x, y) inside a fill of density t (0..1)? */
   dith(x, y, t) { return BAYER[(y & 3) * 4 + (x & 3)] < t * 16; },
-  /* a sky in flat bands, top to bottom, with a two-row checker between neighbours (the way pixel art does it) */
+  /* a sky in flat bands, top to bottom, each fading into the next over four dithered rows (the way pixel art does it) */
   sky(stops, until) {
     const W = this.W, n = stops.length, band = until / n;
     for (let y = 0; y < until; y++) {
-      const i = Math.min(n - 1, Math.floor(y / band)), mix = i < n - 1 && (i + 1) * band - y <= 2;
-      for (let x = 0; x < W; x++) this.buf[y * W + x] = mix && ((x + y) & 1) === 0 ? stops[i + 1] : stops[i];
+      const i = Math.min(n - 1, Math.floor(y / band)), left = (i + 1) * band - y, f = i < n - 1 && left <= 4 ? (4.5 - left) / 5 : 0;
+      for (let x = 0; x < W; x++) this.buf[y * W + x] = f && this.dith(x, y, f) ? stops[i + 1] : stops[i];
     }
   },
   line(x0, y0, x1, y1, c) {
@@ -739,17 +748,17 @@ function lcdPlay(on) { document.body.classList.toggle("playing", on); $("lcdRec"
 /* ---- data ---- */
 /* what each band sounds like; vw: the vowel (or consonant) it resembles */
 const CHAR = [
-  { hz: 60,    nm: "Sub-bass",  vw: "",   ds: "You feel it in your chest. Too much rumbles." },
-  { hz: 120,   nm: "Bass",      vw: "",   ds: "It gives the low end its weight. Too much sounds boomy." },
-  { hz: 250,   nm: "Mud",       vw: "oo", ds: "The low mids. Too much sounds muddy and cloudy, so engineers often cut here." },
-  { hz: 500,   nm: "Box",       vw: "oh", ds: "Too much sounds boxy and hollow, like a cardboard box." },
-  { hz: 1000,  nm: "Honk",      vw: "ah", ds: "Too much sounds nasal, like a telephone." },
-  { hz: 2000,  nm: "Bite",      vw: "eh", ds: "It brings attack and presence: the sound steps forward." },
-  { hz: 4000,  nm: "Edge",      vw: "ee", ds: "The ear is most sensitive here. Too much sounds harsh and tiring." },
-  { hz: 6300,  nm: "Harshness", vw: "",   ds: "Too much makes voices hiss and cymbals sting." },
-  { hz: 8000,  nm: "Sibilance", vw: "ss", ds: "The hiss of the “s” sound lives here." },
-  { hz: 12500, nm: "Sparkle",   vw: "",   ds: "It adds shine and breath." },
-  { hz: 16000, nm: "Air",       vw: "ts", ds: "It adds shimmer and openness at the very top." },
+  { hz: 60,    nm: "Sub-bass",  vw: "",   ds: "You feel it in your chest. Too much of it rumbles." },
+  { hz: 120,   nm: "Bass",      vw: "",   ds: "It gives the low end its weight. Too much of it sounds boomy." },
+  { hz: 250,   nm: "Mud",       vw: "oo", ds: "The low mids. Too much of it makes the mix unclear, so engineers often cut here." },
+  { hz: 500,   nm: "Box",       vw: "oh", ds: "Too much of it sounds hollow, like a voice in a cardboard box." },
+  { hz: 1000,  nm: "Honk",      vw: "ah", ds: "Too much of it sounds nasal, like a telephone." },
+  { hz: 2000,  nm: "Bite",      vw: "eh", ds: "It brings attack and presence: the sound seems closer." },
+  { hz: 4000,  nm: "Edge",      vw: "ee", ds: "The ear is most sensitive here. Too much of it is tiring to hear." },
+  { hz: 6300,  nm: "Harshness", vw: "",   ds: "Too much of it makes voices piercing and cymbals brittle." },
+  { hz: 8000,  nm: "Sibilance", vw: "ss", ds: "This band holds the hiss of “s” sounds." },
+  { hz: 12500, nm: "Sparkle",   vw: "",   ds: "It adds shine." },
+  { hz: 16000, nm: "Air",       vw: "ts", ds: "It adds openness at the very top." },
 ];
 const OCT6 = [250, 500, 1000, 2000, 4000, 8000], OCT9 = [63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000];
 const THIRD = [50, 63, 80, 100, 125, 160, 200, 250, 315, 400, 500, 630, 800, 1000, 1250, 1600, 2000, 2500, 3150, 4000, 5000, 6300, 8000, 10000, 12500, 16000];
@@ -766,8 +775,12 @@ function nearVowel(f) {
   CHAR.forEach((c) => { if (!c.vw) return; const d = Math.abs(Math.log2(c.hz / f)); if (d < bd) { bd = d; b = c; } });
   return b && bd < .35 ? b.vw : "";
 }
-/* the band in plain words: "Honk band. Too much sounds nasal, like a telephone. Remember it as “ah”." */
-function vwLine(f) { const c = nearBand(f); return `<span class="ch">${c.nm} band. ${c.ds}${c.vw ? ` Remember it as “${c.vw}”.` : ""}</span>`; }
+/* the band in plain words: "Honk band. Too much of it sounds nasal, like a telephone. Remember it as “ah”."; a
+ * frequency between the reference bands is named after the nearest one */
+function vwLine(f) {
+  const c = nearBand(f), head = Math.abs(Math.log2(c.hz / f)) < .05 ? `${c.nm} band.` : `Nearest band: ${fmtHz(c.hz)}, ${c.nm.toLowerCase()}.`;
+  return `<span class="ch">${head} ${c.ds}${c.vw ? ` Remember it as “${c.vw}”.` : ""}</span>`;
+}
 
 /* ---- state and score ---- */
 const S = { mode: "freq", diff: "oct6", gain: 15, q: 4, freqs: OCT6.slice(), stats: {}, round: null, resolved: false };
@@ -797,8 +810,12 @@ function lcdFlash(msg, type) {
  * 20 kHz, as on an EQ). After an answer the grass grows into the filter that was played: a hill where a band was
  * boosted, a mown hollow where it was cut, as wide as the band. A stake marks your guess. Each right answer in a
  * row lights a firefly that rises from the band; a miss sends them all away. ---- */
+const MCOL = {
+  sky: [0x07090F, 0x090D15, 0x0B121A, 0x0E181F, 0x112024, 0x152A2B].map(RGB), trees: RGB(0x081210), haze: 0x24403E,
+  turf: [0x0E2B20, 0x174829, 0x2A6A35].map(RGB),
+};
 const Meadow = {
-  W: 0, H: 0, gy: 0, back: [], blades: [], stars: [], flies: [], curve: null, flag: null,
+  W: 0, H: 0, gy: 0, back: [], blades: [], stars: [], flies: [], curve: null, flag: null, grow: 0,
   layout(W, H) {
     this.W = W; this.H = H; this.gy = H - 3;                      /* the ground line */
     const r = seeded(7);
@@ -814,6 +831,14 @@ const Meadow = {
       this.blades.push({ x: x + (r() < .5 ? 0 : 1), h0, h: h0, ph: r() * 6.3, lean: (r() - .5) * 6, reed: r() < .4, leaf: r() < .5 ? -1 : 1, k: .72 + r() * .33 });
     }
     this.stars = []; for (let i = 0; i < W / 9; i++) this.stars.push({ x: Math.floor(r() * W), y: Math.floor(r() * H * .5), ph: r() * 6.3 });
+    /* the edge of a wood far off: a rolling canopy with the tips of firs; the turf: a low dark mat under the blades */
+    this.trees = []; for (let x = 0; x < W; x++) this.trees.push(7 + 3 * Math.sin(x * .031 + .7) + 2 * Math.sin(x * .11 + 2));
+    for (let x = 4; x < W; x += 7 + Math.floor(r() * 7)) {
+      const hgt = 3 + r() * 4;
+      for (let d = -3; d <= 3; d++) if (x + d >= 0 && x + d < W) this.trees[x + d] = Math.max(this.trees[x + d], this.trees[x] + hgt - Math.abs(d) * hgt / 3);
+    }
+    this.trees = this.trees.map(Math.round);
+    this.turf = []; for (let x = 0; x < W; x++) this.turf.push(1 + Math.round(1.2 + 1.1 * Math.sin(x * .37) + r() * .8));
   },
   fx(x) { return 20 * Math.pow(1000, x / (this.W - 1)); },
   xf(f) { return Math.log(f / 20) / Math.log(1000) * (this.W - 1); },
@@ -843,6 +868,7 @@ const Meadow = {
   },
   update(dt) {
     const k = Math.min(1, dt / 200);
+    this.grow = this.curve && this.curve.g > 0 ? Math.min(1, this.grow + dt / 500) : 0;   /* the mound rises with the grass */
     for (const b of this.blades) b.h += (this.tgt(b) - b.h) * k;
     for (const b of this.back) b.h += (b.h0 + (this.tgt(b) - b.h0) * b.k - b.h) * k;
     for (const fl of this.flies) {
@@ -869,48 +895,57 @@ const Meadow = {
     return dx;
   },
   render() {
-    const S = Scene, W = this.W, H = this.H, gy = this.gy, t = S.time;
-    for (let i = 0; i < W * H; i++) S.buf[i] = TLP.ground;
-    for (let y = gy - 16; y <= gy; y++) {                       /* a thin haze over the grass */
-      const d = Math.pow((y - gy + 16) / 16, 2) * .3;
-      for (let x = 0; x < W; x++) if (hash2(x, y) < d) S.put(x, y, TLP.jade[3]);
-    }
-    for (let x = 0; x < W; x++) for (let y = gy - this.far[x]; y <= gy; y++) S.put(x, y, TLP.jade[3]);
-    const c = this.curve;
-    if (c && c.g < 0) {                                         /* the mown hollow: bare earth */
-      const sig = 1 / (c.q * .55), cut = Math.min(1, -c.g / 9);
-      for (let x = 0; x < W; x++) {
-        const d = cut * Math.exp(-Math.pow(Math.log2(this.fx(x) / c.f), 2) / (2 * sig * sig));
-        if (d > .45) { S.put(x, gy, TLP.soil); if (d > .7) S.put(x, gy - 1, hash2(x, 1) < .5 ? TLP.soil : TLP.copper[3]); }
-      }
-    }
+    const S = Scene, W = this.W, H = this.H, gy = this.gy, t = S.time, c = this.curve;
+    S.sky(MCOL.sky, gy + 1);
     for (const s of this.stars) {
+      if (S.S === 3 && s.x < W * .5 && s.y < 17) continue;      /* (none behind the words in the corner) */
       const v = Math.sin(t * .0013 + s.ph);
       if (v > -.3) S.put(s.x, s.y, v > .8 ? TLP.sand[0] : TLP.sage[2]);
     }
+    for (let x = 0; x < W; x++) for (let y = gy - this.trees[x]; y <= gy; y++) S.put(x, y, MCOL.trees);
+    for (let y = gy - 14; y <= gy; y++) {                       /* a haze over the meadow, in soft steps */
+      const v = Math.pow((y - gy + 14) / 14, 1.5) * 3, q = Math.floor(v) + (S.dith(y, y, v % 1) ? 1 : 0);
+      if (q > 0) for (let x = 0; x < W; x++) S.tint(x, y, MCOL.haze, q * .16);
+    }
     for (let y = gy + 1; y < H; y++) for (let x = 0; x < W; x++) S.put(x, y, y === gy + 1 && S.dith(x, y, .25) ? TLP.soil : TLP.ground);
-    for (const f of [100, 1000, 10000]) S.put(this.xf(f), gy + 1, TLP.sand[2]);   /* pebbles under 100 Hz, 1 kHz, 10 kHz */
+    let bell = null;
+    if (c && c.g) { const sig = 1 / (c.q * .55); bell = (x) => Math.exp(-Math.pow(Math.log2(this.fx(x) / c.f), 2) / (2 * sig * sig)); }
+    for (let x = 0; x < W; x++) {                               /* the turf, and under a boost a grassy mound */
+      let th = this.turf[x];
+      if (bell && c.g < 0) th = Math.round(th * (1 - Math.min(1, -c.g / 9) * bell(x)));
+      const mh = bell && c.g > 0 ? Math.round(c.g / 18 * (H - 28) * bell(x) * .45 * this.grow) : 0, top = th + mh;
+      for (let i = 0; i < top; i++) S.put(x, gy - i, i === top - 1 ? MCOL.turf[2] : i > top * .5 ? MCOL.turf[1] : MCOL.turf[0]);
+    }
+    if (bell && c.g < 0) {                                      /* the mown hollow: bare earth */
+      const cut = Math.min(1, -c.g / 9);
+      for (let x = 0; x < W; x++) {
+        const d = cut * bell(x);
+        if (d > .45) { S.put(x, gy, TLP.soil); if (d > .7) S.put(x, gy - 1, hash2(x, 1) < .5 ? TLP.soil : TLP.copper[3]); }
+      }
+    }
     for (const b of this.back) this.blade(b, [TLP.jade[2], TLP.jade[3]], () => TLP.jade[2]);
     for (const b of this.blades) {
       const dx = this.blade(b, [TLP.lime[1], TLP.lime[2]], (h) => (h > 14 ? TLP.lime[0] : TLP.lime[1]));
       const h = Math.round(b.h);
-      if (h > 12) {                                              /* the hill's tall stems: a leaf, and a reed head on some */
+      if (h > 12) {                                              /* the tall stems on the mound: a leaf, and a reed head on some */
         const ly = Math.round(h * .45), lx = b.x + Math.round(dx * Math.pow(.45, 1.6));
         for (let i = 1; i <= 3; i++) S.put(lx + b.leaf * i, gy - ly - (i >> 1), i === 3 ? TLP.lime[0] : TLP.lime[1]);
         if (b.reed) for (let i = 0; i < 3; i++) S.put(b.x + dx, gy - h - i, i === 2 ? TLP.copper[0] : i === 1 ? TLP.copper[1] : TLP.copper[2]);
       }
-      if (h < 2) S.put(b.x, gy, TLP.soil);                       /* the mown hollow shows the soil */
     }
     if (this.flag != null) {                                    /* the stake of your guess */
       const x = Math.round(this.xf(this.flag));
       for (let i = 0; i < 8; i++) S.put(x, gy - i, TLP.sand[1]);
       for (const [dx, dy] of [[1, 7], [2, 7], [3, 7], [1, 6], [2, 6], [1, 5]]) S.put(x + dx, gy - dy, TLP.rose[1]);
     }
-    for (const fl of this.flies) {
+    for (const fl of this.flies) {                              /* fireflies, each with a soft glow */
       const v = (Math.sin(t * .005 + fl.ph) + 1) / 2;
       if (v < .25 && !fl.out) continue;
+      for (let dy = -3; dy <= 3; dy++) for (let dx = -3; dx <= 3; dx++) {
+        const r = Math.hypot(dx, dy);
+        if (r > 0 && r <= 2.5) S.tint(fl.x + dx, fl.y + dy, 0xDDF58A, v * (r <= 1.5 ? .4 : .13));
+      }
       S.put(fl.x, fl.y, v > .5 ? TLP.fire[0] : TLP.fire[1]);
-      if (v > .8) for (const [dx, dy] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) S.put(fl.x + dx, fl.y + dy, TLP.lime[1]);
     }
   },
 };
@@ -921,7 +956,7 @@ const MODES = [
   { id: "boostcut", name: "Boost / cut", lcd: "Boost or cut" },
   { id: "ab",       name: "A / B",       lcd: "Spot the EQ: A or B" },
   { id: "match",    name: "Match",       lcd: "Match the frequency" },
-  { id: "qmode",    name: "Width (Q)",   lcd: "How wide is the band" },
+  { id: "qmode",    name: "Width (Q)",   lcd: "Judge the band width" },
   { id: "sweep",    name: "Free sweep",  lcd: "Free sweep" },
 ];
 const area = $("modeArea"), transportEl = $("transport");
@@ -972,7 +1007,7 @@ function hzPad(f, withVowel) {
 /* -- 1. which frequency is boosted -- */
 RENDER.freq = () => {
   transStd();
-  area.innerHTML = `<div class="task">Which frequency is boosted?<span class="hint">Press Play. Hold Bypass to hear the sound without the EQ. Then pick a band.</span></div>
+  area.innerHTML = `<div class="task">Which frequency is boosted?<span class="hint">Press “Play”. Hold “Bypass” to hear the sound without the EQ. Then pick a band.</span></div>
     <div class="grid" id="ansGrid" style="--cols:${padCols(S.freqs.length)};--mcols:${padColsM(S.freqs.length)}"></div>`;
   const g = $("ansGrid");
   S.freqs.forEach((f) => {
@@ -993,7 +1028,7 @@ function answerFreq(f, btn) {
   const t = S.round.target, idx = S.freqs.indexOf(t), gi = S.freqs.indexOf(f), ok = f === t, near = Math.abs(idx - gi) === 1;
   markPads(t);
   if (ok) feedback("ok", `✓ Correct: <b>${fmtHz(t)}</b>. ${vwLine(t)}`);
-  else { btn.classList.add(near ? "near" : "wrong"); feedback(near ? "info" : "no", `${near ? "Close." : "✗"} It was <b>${fmtHz(t)}</b>. You picked ${fmtHz(f)}. ${vwLine(t)}`); }
+  else { btn.classList.add(near ? "near" : "wrong"); feedback(near ? "info" : "no", `${near ? "✗ Not quite: one band off." : "✗"} It was <b>${fmtHz(t)}</b>. You picked ${fmtHz(f)}. ${vwLine(t)}`); }
   Meadow.show(t, S.gain, S.q); Meadow.mark(f);
   record(ok ? "ok" : "wrong"); resolveUI();
 }
@@ -1042,7 +1077,7 @@ RENDER.ab = () => {
     `<button class="btn btn-ghost" id="abB">${pix("play")}B</button>` +
     `<button class="btn btn-ghost" id="stopBtn">${pix("stop")}Stop</button>`;
   wireStop();
-  area.innerHTML = `<div class="task">Which one has the EQ: A or B?<span class="hint">Play A, then B. Listen for a bump in the spectrum.</span></div>
+  area.innerHTML = `<div class="task">Which one has the EQ: A or B?<span class="hint">Play “A”, then “B”. One of them has a boosted band. Listen for it.</span></div>
     <div class="choicewrap"><button class="choice" id="chA">A has the EQ</button><button class="choice" id="chB">B has the EQ</button></div>`;
   doReveal = revealAB; nextRound = newABRound; newABRound();
 };
@@ -1081,7 +1116,7 @@ RENDER.match = () => {
     `<button class="btn btn-ghost" id="playMine">${pix("play")}Yours</button>` +
     `<button class="btn btn-ghost" id="stopBtn">${pix("stop")}Stop</button>`;
   wireStop();
-  area.innerHTML = `<div class="task">Can you find the reference frequency?<span class="hint">Play the reference. Turn the big knob until Yours sounds the same, then press Check. Aim for ⅓ octave or closer.</span></div>
+  area.innerHTML = `<div class="task">Can you find the reference frequency?<span class="hint">Play the reference. Drag the big knob up or down until “Yours” matches it, then press “Check”. Within 4 semitones (⅓ octave) counts as correct.</span></div>
     <div class="matchrow"><div id="matchKnob"></div><button class="btn btn-accent" id="checkBtn" style="min-width:140px;min-height:52px">Check</button></div>`;
   S._matchKnob = makeKnob($("matchKnob"), { label: "Yours", xl: true, sens: 280, min: 0, max: 1000, step: 2, value: 500,
     fmt: (v) => fmtHzP(slF(v)), onInput: (v) => { const f = slF(v); S.round.mine = f; Meadow.mark(f); if (S.round.listening === "mine") AE.setFilterFreq(f); } });
@@ -1101,7 +1136,7 @@ function checkMatch() {
   const cents = 1200 * Math.log2(S.round.mine / S.round.target), oct = Math.abs(cents) / 1200, ok = oct <= .33, great = oct <= .12;
   const st = Math.abs(cents / 100).toFixed(1), dir = cents > 0 ? "higher" : "lower";
   $("checkBtn").disabled = true;
-  feedback(ok ? "ok" : "no", (great ? "✓ Spot on. " : ok ? "✓ Close enough. " : "✗ Too far. ") +
+  feedback(ok ? "ok" : "no", (great ? "✓ Very close (within ⅛ octave). " : ok ? "✓ Close enough. " : "✗ Too far. ") +
     `The reference was <b>${fmtHz(S.round.target)}</b>. You set ${fmtHz(S.round.mine)}, ${st} semitone${st === "1.0" ? "" : "s"} ${dir}. ${vwLine(S.round.target)}`);
   Meadow.show(S.round.target, S.gain, S.q); Meadow.mark(S.round.mine);
   record(ok ? "ok" : "wrong"); resolveUI();
@@ -1111,7 +1146,7 @@ function checkMatch() {
 const QSET = [{ q: .7, n: "Wide" }, { q: 2, n: "Medium" }, { q: 5, n: "Narrow" }, { q: 9, n: "Very narrow" }];
 RENDER.qmode = () => {
   transStd();
-  area.innerHTML = `<div class="task">How wide is the band?<span class="hint">A narrow band rings like a whistle. A wide one changes the whole tonal balance.</span></div>
+  area.innerHTML = `<div class="task">How wide is the band?<span class="hint">Press “Play”. Hold “Bypass” to compare. A narrow band sounds like a whistle. A wide band changes the whole sound.</span></div>
     <div class="grid" id="ansGrid" style="--cols:4;--mcols:2"></div>`;
   const g = $("ansGrid");
   QSET.forEach((o, i) => {
@@ -1141,7 +1176,7 @@ function answerQ(i, btn) {
 /* -- 6. free sweep: a hand-turned EQ, no score -- */
 RENDER.sweep = () => {
   transportEl.innerHTML = `<button class="btn btn-accent" id="playBtn">${pix("play")}Play</button><button class="btn btn-ghost" id="stopBtn">${pix("stop")}Stop</button>`;
-  area.innerHTML = `<div class="task">Sweep a band and hear what it does<span class="hint">A manual EQ, with no score. Turn the knobs and listen; the meadow above draws the curve. Bit by bit, you build a map of the spectrum in your head.</span></div>
+  area.innerHTML = `<div class="task">Sweep a band and hear what it does<span class="hint">Nothing is scored here. Drag the knobs up or down and listen; the meadow above draws the EQ curve. You learn what each part of the spectrum sounds like.</span></div>
     <div class="knobrow" style="align-items:center"><div id="swKF"></div><div id="swKG"></div><div id="swKQ"></div></div>
     <div class="feed show info" id="swInfo" style="margin-top:14px"></div>`;
   const info = $("swInfo");
@@ -1185,7 +1220,8 @@ function buildTabs() {
   });
 }
 const KN = {};
-function updateSummary() { $("lcdSub").textContent = `${SRC_LCD[AE.curSrc]} · ${S.mode === "boostcut" ? "±" : "+"}${S.gain} dB · Q ${S.q.toFixed(1)}`; }
+/* (in Width the Q is the question, so the screen does not show it) */
+function updateSummary() { $("lcdSub").textContent = `${SRC_LCD[AE.curSrc]} · ${S.mode === "boostcut" ? "±" : "+"}${S.gain} dB · Q ${S.mode === "qmode" ? "?" : S.q.toFixed(1)}`; }
 function applyDiff(d) {
   const c = DIFF[d]; S.diff = d; S.freqs = c.freqs.slice(); S.gain = c.gain;
   if (KN.gain) KN.gain.set(c.gain);
@@ -1207,7 +1243,7 @@ function wireSettings() {
   $("fileInp").onchange = async (e) => {
     const f = e.target.files[0]; if (!f) return;
     try { await AE.loadFile(f); AE.curSrc = "file"; ss.value = "file"; $("fileSet").hidden = false; if (AE.playing) AE.start(); updateSummary(); }
-    catch (_) { feedback("no", "This file won't play here. Try a WAV, MP3 or M4A file."); }
+    catch (_) { feedback("no", "This file won’t play here. Try a WAV, MP3 or M4A file."); }
   };
 }
 
